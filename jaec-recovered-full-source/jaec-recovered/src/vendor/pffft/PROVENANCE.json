@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/marton78/pffft",
+  "tree": "aa16fd3db58de4ba5dae8b0438440bb9da46b6fa",
+  "retrieved": "2026-10-09",
+  "files": {
+    "LICENSE.txt": {
+      "upstream_path": "LICENSE.txt",
+      "git_blob_sha1": "1ee09cd56c1767a1ca1f81df90b4e62d9d33bab1",
+      "sha256": "6c99fce38c991ff104307ecebe20ff014b5e1f5d9e3426da292da8417c7a78cd"
+    },
+    "pffft.c": {
+      "upstream_path": "src/pffft.c",
+      "git_blob_sha1": "4e2868e0a16f28e32cee7526bb79691f462f223a",
+      "sha256": "9da0908e94261feca20a0d407a3a33e8318d1a66f953d92bee01baaa334d74ca"
+    },
+    "pffft.h": {
+      "upstream_path": "include/pffft/pffft.h",
+      "git_blob_sha1": "f9d72579e0f38d89a9d0a17eec1c3129ab78594f",
+      "sha256": "0935379f8b7904b1140050b2c6196c1b86dc08b11fc67da8773df965678469fb"
+    },
+    "pffft_common.c": {
+      "upstream_path": "src/pffft_common.c",
+      "git_blob_sha1": "955889f7ea507006f0e68f4292fbb00e2f10e15f",
+      "sha256": "3e89b8c5d345227f5e8f3a35ba04c6713b119687c752834784cdf48823ed0467"
+    },
+    "pffft_priv_impl.h": {
+      "upstream_path": "src/pffft_priv_impl.h",
+      "git_blob_sha1": "0828fe25e98dda3a2883690e6d218839396ed6d9",
+      "sha256": "6316e83d78c3efc133e34694b349485235d5af0fdd83448cb32347d578f4a4fe"
+    },
+    "simd/pf_altivec_float.h": {
+      "upstream_path": "src/simd/pf_altivec_float.h",
+      "git_blob_sha1": "21d718948e8d75811b8c7907de1ce73e1f1c2e74",
+      "sha256": "dd0d509a04550d8e116516dc95d47b1a2f21ef6e67739d5489f9c928d3b6e387"
+    },
+    "simd/pf_float.h": {
+      "upstream_path": "src/simd/pf_float.h",
+      "git_blob_sha1": "cd89e8c6cd68f74f762bf519bb142ec56c22d96c",
+      "sha256": "919beb3d24543b89e39ac81436baa28884b07a7cc4c6dcb4c4cc6deac50a7046"
+    },
+    "simd/pf_fma_x86.h": {
+      "upstream_path": "src/simd/pf_fma_x86.h",
+      "git_blob_sha1": "5974a6b8a1a59c178043416663f41a49243d6a8d",
+      "sha256": "bc01552a085229f3c33089077a68868736567cf6c24b6d1998dfc27f15a279f6"
+    },
+    "simd/pf_neon_float.h": {
+      "upstream_path": "src/simd/pf_neon_float.h",
+      "git_blob_sha1": "75283aebcbe6fe7aa22708353680035ead79710b",
+      "sha256": "ded855ee423c9fa0d08429aca9073c686b5877500e1f99bd3223ffe3153bbe0e"
+    },
+    "simd/pf_scalar_float.h": {
+      "upstream_path": "src/simd/pf_scalar_float.h",
+      "git_blob_sha1": "1d6e388202c0cee7a233cbf0a0bb135f58c7d0b6",
+      "sha256": "3e7d89db89bdb8d32d30dcdcd76912b849d70e12cf74879acb578bb4610f16f2"
+    },
+    "simd/pf_sse1_float.h": {
+      "upstream_path": "src/simd/pf_sse1_float.h",
+      "git_blob_sha1": "5af137f5436f88e451665c8ac52414e7d03d2ff5",
+      "sha256": "bfbb4a05feb094e5b967fe4db4312e82b02d716fb0d52fe561fad1cb31c585cd"
+    },
+    "simd/pf_wasm_float.h": {
+      "upstream_path": "src/simd/pf_wasm_float.h",
+      "git_blob_sha1": "a704c7edf9e940570c521a2d0552913de89f871c",
+      "sha256": "c4e380e765755ecae3ad1bf40cf253e9dca5f29cc2bd4a5f9b1b060d7cce5c6f"
+    }
+  }
+}

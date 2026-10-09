@@ -1,0 +1,47 @@
+{
+  "library": "/home/nd/nova/experiments/jaec-reverse-20261009/original/jaec_x86.so",
+  "cases": {
+    "silence": {
+      "samples": 96000,
+      "sha256": "ea0787f65f73b0013d03b359490e3125211b28ad5c1502ffb1544c0ded4192f5",
+      "peak": 0,
+      "rms": 0.0,
+      "block_and_reset_exact": true
+    },
+    "near_impulse": {
+      "samples": 96000,
+      "sha256": "413271ab65aa312f934e42e4baa7b6a3f41a8484e6e37415d50f17e7fd3d7a18",
+      "peak": 12000,
+      "rms": 38.72983346207417,
+      "block_and_reset_exact": true
+    },
+    "near_only": {
+      "samples": 96000,
+      "sha256": "b7df06f90bfe6fe1b612a293c59bd77979ddb4ed02d6dbf4f5e34af791c71691",
+      "peak": 5786,
+      "rms": 1943.645260859733,
+      "block_and_reset_exact": true
+    },
+    "far_only": {
+      "samples": 96000,
+      "sha256": "774be15e1812d46e1d65660173df6313ce72ceab423be2c74df309e36478da87",
+      "peak": 2285,
+      "rms": 89.88863034101328,
+      "block_and_reset_exact": true
+    },
+    "double_talk": {
+      "samples": 96000,
+      "sha256": "f0eb3e6c953d4903b7e6f5e56f0dab2e7de884788a2143bb0d5a07d86be5bd01",
+      "peak": 7466,
+      "rms": 1929.46234197617,
+      "block_and_reset_exact": true
+    },
+    "echo_path_change": {
+      "samples": 96000,
+      "sha256": "beac07de709fbbd3ca18056028e7fc3ab02d269459d91b1c93d9a95a31c889cd",
+      "peak": 7466,
+      "rms": 1939.1793666662625,
+      "block_and_reset_exact": true
+    }
+  }
+}

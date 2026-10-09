@@ -1,0 +1,31 @@
+{
+  "reference": "original scalar dispatch, 240 consecutive spectral frames",
+  "fft_24_random_frames_max_abs_error": 0.0,
+  "fft_roundtrip_max_abs_error": 1.4901161193847656e-07,
+  "max_abs_errors": {
+    "tde": {
+      "magnitude_means": 0.0,
+      "magnitude_variances": 0.0,
+      "correlation_features": 0.0,
+      "conv1": 0.0,
+      "conv2": 0.0,
+      "gru_hidden": 5.364418029785156e-07,
+      "probability": 1.1920928955078125e-07
+    },
+    "lp": {
+      "hidden": 3.2782554626464844e-06,
+      "filter_re": 3.2782554626464844e-07,
+      "filter_im": 2.384185791015625e-07,
+      "ref_re": 0.0,
+      "ref_im": 0.0,
+      "error_re": 3.814697265625e-06,
+      "error_im": 3.814697265625e-06,
+      "ref_power": 0.00048828125,
+      "features": 6.771087646484375e-05,
+      "conv": 1.8835067749023438e-05,
+      "step_size": 2.205371856689453e-06,
+      "decay": 5.364418029785156e-07
+    },
+    "lp_output": 3.814697265625e-06
+  }
+}

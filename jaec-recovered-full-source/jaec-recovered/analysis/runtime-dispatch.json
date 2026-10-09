@@ -1,0 +1,112 @@
+[
+  {
+    "slot": "0x0",
+    "kind": "function",
+    "value": "0x12d40"
+  },
+  {
+    "slot": "0x8",
+    "kind": "function",
+    "value": "0xf910"
+  },
+  {
+    "slot": "0x10",
+    "kind": "value",
+    "value": "0x0"
+  },
+  {
+    "slot": "0x18",
+    "kind": "value",
+    "value": "0x0"
+  },
+  {
+    "slot": "0x20",
+    "kind": "value",
+    "value": "0x0"
+  },
+  {
+    "slot": "0x28",
+    "kind": "function",
+    "value": "0x105a0"
+  },
+  {
+    "slot": "0x30",
+    "kind": "function",
+    "value": "0x11c90"
+  },
+  {
+    "slot": "0x38",
+    "kind": "value",
+    "value": "0x100000001"
+  },
+  {
+    "slot": "0x40",
+    "kind": "function",
+    "value": "0xf2b0"
+  },
+  {
+    "slot": "0x48",
+    "kind": "value",
+    "value": "0x0"
+  },
+  {
+    "slot": "0x50",
+    "kind": "function",
+    "value": "0x142b0"
+  },
+  {
+    "slot": "0x58",
+    "kind": "value",
+    "value": "0x1"
+  },
+  {
+    "slot": "0x60",
+    "kind": "function",
+    "value": "0x15760"
+  },
+  {
+    "slot": "0x68",
+    "kind": "function",
+    "value": "0x151e0"
+  },
+  {
+    "slot": "0x70",
+    "kind": "function",
+    "value": "0x15340"
+  },
+  {
+    "slot": "0x78",
+    "kind": "function",
+    "value": "0x15ed0"
+  },
+  {
+    "slot": "0x80",
+    "kind": "value",
+    "value": "0x0"
+  },
+  {
+    "slot": "0x88",
+    "kind": "function",
+    "value": "0x133f0"
+  },
+  {
+    "slot": "0x90",
+    "kind": "function",
+    "value": "0x13d20"
+  },
+  {
+    "slot": "0x98",
+    "kind": "function",
+    "value": "0x16980"
+  },
+  {
+    "slot": "0xa0",
+    "kind": "function",
+    "value": "0x16ee0"
+  },
+  {
+    "slot": "0xa8",
+    "kind": "value",
+    "value": "0x0"
+  }
+]

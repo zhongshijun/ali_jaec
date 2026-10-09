@@ -1,0 +1,77 @@
+cc -O2 -std=c11 -fPIC -Wall -Wextra -ffp-contract=off -DJAEC_X86_APPROX=1 -shared \
+  -Wl,-z,defs,--version-script=src/exports.map src/frontend.c src/tde.c src/linear_aec.c src/activation_compat.c src/model_loader.c src/vendor/monocypher/monocypher.c src/vendor/pffft/pffft.c src/vendor/pffft/pffft_common.c -o build/libjaec_recovered.so -lm
+In file included from src/vendor/pffft/simd/pf_float.h:62,
+                 from src/vendor/pffft/pffft.c:98:
+src/vendor/pffft/simd/pf_sse1_float.h:42:9: note: #pragma message: src/vendor/pffft/simd/pf_sse1_float.h: SSE1 float macros are defined
+   42 | #pragma message( __FILE__ ": SSE1 float macros are defined" )
+      |         ^~~~~~~
+cc -O2 -std=c11 -fPIC -Wall -Wextra -ffp-contract=off -DJAEC_TDE_SKIP=0 -shared \
+  -Wl,-z,defs,--version-script=src/exports.map src/frontend.c src/tde.c src/linear_aec.c src/activation_compat.c src/model_loader.c src/vendor/monocypher/monocypher.c src/vendor/pffft/pffft.c src/vendor/pffft/pffft_common.c -o build/libjaec_scalar.so -lm
+In file included from src/vendor/pffft/simd/pf_float.h:62,
+                 from src/vendor/pffft/pffft.c:98:
+src/vendor/pffft/simd/pf_sse1_float.h:42:9: note: #pragma message: src/vendor/pffft/simd/pf_sse1_float.h: SSE1 float macros are defined
+   42 | #pragma message( __FILE__ ": SSE1 float macros are defined" )
+      |         ^~~~~~~
+python3 tests/check_loader.py
+{
+  "loaded_model_bytes": 105184,
+  "all_bytes_equal": true,
+  "sha256": "aac25c247ec039c03b435aa541cff140f05d7d2f2629422285a653261a03134b",
+  "invalid_paths_rejected": true
+}
+python3 tests/check_modules.py
+{
+  "reference": "original scalar dispatch, 240 consecutive spectral frames",
+  "fft_24_random_frames_max_abs_error": 0.0,
+  "fft_roundtrip_max_abs_error": 1.4901161193847656e-07,
+  "max_abs_errors": {
+    "tde": {
+      "magnitude_means": 0.0,
+      "magnitude_variances": 0.0,
+      "correlation_features": 0.0,
+      "conv1": 0.0,
+      "conv2": 0.0,
+      "gru_hidden": 5.364418029785156e-07,
+      "probability": 1.1920928955078125e-07
+    },
+    "lp": {
+      "hidden": 3.2782554626464844e-06,
+      "filter_re": 3.2782554626464844e-07,
+      "filter_im": 2.384185791015625e-07,
+      "ref_re": 0.0,
+      "ref_im": 0.0,
+      "error_re": 3.814697265625e-06,
+      "error_im": 3.814697265625e-06,
+      "ref_power": 0.00048828125,
+      "features": 6.771087646484375e-05,
+      "conv": 1.8835067749023438e-05,
+      "step_size": 2.205371856689453e-06,
+      "decay": 5.364418029785156e-07
+    },
+    "lp_output": 3.814697265625e-06
+  }
+}
+python3 tests/check_recovered.py
+silence {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.004292309284210205, "real_time_factor": 0.0007153848807017008, "reset_and_chunk_exact": true}
+near_impulse {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.004008615389466286, "real_time_factor": 0.0006681025649110476, "reset_and_chunk_exact": true}
+near_only {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.004070820286870003, "real_time_factor": 0.0006784700478116671, "reset_and_chunk_exact": true}
+far_only {"max_abs_pcm": 1, "rmse_pcm": 0.11898004034290793, "identical_samples_percent": 98.58437500000001, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.3309166952967644, "real_time_factor": 0.05515278254946073, "reset_and_chunk_exact": true}
+double_talk {"max_abs_pcm": 1, "rmse_pcm": 0.149547929886486, "identical_samples_percent": 97.76354166666667, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.33047039061784744, "real_time_factor": 0.05507839843630791, "reset_and_chunk_exact": true}
+echo_path_change {"max_abs_pcm": 1, "rmse_pcm": 0.17287399071770937, "identical_samples_percent": 97.01145833333334, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.3389116209000349, "real_time_factor": 0.05648527015000582, "reset_and_chunk_exact": true}
+reference_stops_and_restarts_12s {"max_abs_pcm": 2, "rmse_pcm": 0.39397810852888765, "identical_samples_percent": 84.603125, "samples": 192000, "audio_seconds": 12.0, "recovered_process_seconds": 0.5864208154380322, "real_time_factor": 0.04886840128650268, "reset_and_chunk_exact": true}
+full_scale_uncorrelated_6s {"max_abs_pcm": 9, "rmse_pcm": 1.5689168237991458, "identical_samples_percent": 29.819791666666667, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.4005557671189308, "real_time_factor": 0.06675929451982181, "reset_and_chunk_exact": true}
+full_scale_near_only_6s {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.00421406514942646, "real_time_factor": 0.0007023441915710767, "reset_and_chunk_exact": true}
+one_lsb_signals_2s {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 32000, "audio_seconds": 2.0, "recovered_process_seconds": 0.1318482719361782, "real_time_factor": 0.0659241359680891, "reset_and_chunk_exact": true}
+official_speech_example_10s {"max_abs_pcm": 6, "rmse_pcm": 0.49908666582067684, "identical_samples_percent": 83.924375, "samples": 160000, "audio_seconds": 10.0, "recovered_process_seconds": 0.5617705695331097, "real_time_factor": 0.05617705695331097, "reset_and_chunk_exact": true, "mic_pcm_sha256": "52546bff3a814d65588f0939382f56a303e2b8f18a99d972808f734af097bf3d", "ref_pcm_sha256": "2b49aa57a82f08f1326c6f9531c5a77c9fb1e4974acc6005d26db6a4b2b8d7ee"}
+python3 tests/check_recovered.py --scalar
+silence {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.004079049453139305, "real_time_factor": 0.0006798415755232176, "reset_and_chunk_exact": true}
+near_impulse {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.004062999039888382, "real_time_factor": 0.0006771665066480637, "reset_and_chunk_exact": true}
+near_only {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.00406225211918354, "real_time_factor": 0.0006770420198639234, "reset_and_chunk_exact": true}
+far_only {"max_abs_pcm": 1, "rmse_pcm": 0.010206207261596576, "identical_samples_percent": 99.98958333333333, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.3890227638185024, "real_time_factor": 0.06483712730308373, "reset_and_chunk_exact": true}
+double_talk {"max_abs_pcm": 1, "rmse_pcm": 0.009682458365518542, "identical_samples_percent": 99.990625, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.39390180446207523, "real_time_factor": 0.06565030074367921, "reset_and_chunk_exact": true}
+echo_path_change {"max_abs_pcm": 1, "rmse_pcm": 0.012909944487358056, "identical_samples_percent": 99.98333333333333, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.39484103210270405, "real_time_factor": 0.06580683868378401, "reset_and_chunk_exact": true}
+reference_stops_and_restarts_12s {"max_abs_pcm": 1, "rmse_pcm": 0.013881942707464736, "identical_samples_percent": 99.98072916666668, "samples": 192000, "audio_seconds": 12.0, "recovered_process_seconds": 0.6551641765981913, "real_time_factor": 0.054597014716515936, "reset_and_chunk_exact": true}
+full_scale_uncorrelated_6s {"max_abs_pcm": 1, "rmse_pcm": 0.04306003560921271, "identical_samples_percent": 99.81458333333333, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.39566461741924286, "real_time_factor": 0.06594410290320714, "reset_and_chunk_exact": true}
+full_scale_near_only_6s {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 96000, "audio_seconds": 6.0, "recovered_process_seconds": 0.0041632819920778275, "real_time_factor": 0.0006938803320129713, "reset_and_chunk_exact": true}
+one_lsb_signals_2s {"max_abs_pcm": 0, "rmse_pcm": 0.0, "identical_samples_percent": 100.0, "samples": 32000, "audio_seconds": 2.0, "recovered_process_seconds": 0.13082794658839703, "real_time_factor": 0.06541397329419851, "reset_and_chunk_exact": true}
+official_speech_example_10s {"max_abs_pcm": 1, "rmse_pcm": 0.018200274723201296, "identical_samples_percent": 99.966875, "samples": 160000, "audio_seconds": 10.0, "recovered_process_seconds": 0.6625313442200422, "real_time_factor": 0.06625313442200423, "reset_and_chunk_exact": true, "mic_pcm_sha256": "52546bff3a814d65588f0939382f56a303e2b8f18a99d972808f734af097bf3d", "ref_pcm_sha256": "2b49aa57a82f08f1326c6f9531c5a77c9fb1e4974acc6005d26db6a4b2b8d7ee"}

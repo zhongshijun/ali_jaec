@@ -1,0 +1,125 @@
+{
+  "reference_mode": "scalar DSP",
+  "recovered_library": "libjaec_scalar.so",
+  "library_sha256": "bd7d199f4517c3ba991f3e32c8d9c7a35b9e1bda502d95b78e5631ef3b9542ea",
+  "weights_sha256": "40234f7abea80b238c2804d7ebe2b63cfa5d12a1c86a6e7895d40f80f1bca75d",
+  "cases": {
+    "silence": {
+      "max_abs_pcm": 0,
+      "rmse_pcm": 0.0,
+      "identical_samples_percent": 100.0,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.004079049453139305,
+      "real_time_factor": 0.0006798415755232176,
+      "reset_and_chunk_exact": true
+    },
+    "near_impulse": {
+      "max_abs_pcm": 0,
+      "rmse_pcm": 0.0,
+      "identical_samples_percent": 100.0,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.004062999039888382,
+      "real_time_factor": 0.0006771665066480637,
+      "reset_and_chunk_exact": true
+    },
+    "near_only": {
+      "max_abs_pcm": 0,
+      "rmse_pcm": 0.0,
+      "identical_samples_percent": 100.0,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.00406225211918354,
+      "real_time_factor": 0.0006770420198639234,
+      "reset_and_chunk_exact": true
+    },
+    "far_only": {
+      "max_abs_pcm": 1,
+      "rmse_pcm": 0.010206207261596576,
+      "identical_samples_percent": 99.98958333333333,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.3890227638185024,
+      "real_time_factor": 0.06483712730308373,
+      "reset_and_chunk_exact": true
+    },
+    "double_talk": {
+      "max_abs_pcm": 1,
+      "rmse_pcm": 0.009682458365518542,
+      "identical_samples_percent": 99.990625,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.39390180446207523,
+      "real_time_factor": 0.06565030074367921,
+      "reset_and_chunk_exact": true
+    },
+    "echo_path_change": {
+      "max_abs_pcm": 1,
+      "rmse_pcm": 0.012909944487358056,
+      "identical_samples_percent": 99.98333333333333,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.39484103210270405,
+      "real_time_factor": 0.06580683868378401,
+      "reset_and_chunk_exact": true
+    },
+    "reference_stops_and_restarts_12s": {
+      "max_abs_pcm": 1,
+      "rmse_pcm": 0.013881942707464736,
+      "identical_samples_percent": 99.98072916666668,
+      "samples": 192000,
+      "audio_seconds": 12.0,
+      "recovered_process_seconds": 0.6551641765981913,
+      "real_time_factor": 0.054597014716515936,
+      "reset_and_chunk_exact": true
+    },
+    "full_scale_uncorrelated_6s": {
+      "max_abs_pcm": 1,
+      "rmse_pcm": 0.04306003560921271,
+      "identical_samples_percent": 99.81458333333333,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.39566461741924286,
+      "real_time_factor": 0.06594410290320714,
+      "reset_and_chunk_exact": true
+    },
+    "full_scale_near_only_6s": {
+      "max_abs_pcm": 0,
+      "rmse_pcm": 0.0,
+      "identical_samples_percent": 100.0,
+      "samples": 96000,
+      "audio_seconds": 6.0,
+      "recovered_process_seconds": 0.0041632819920778275,
+      "real_time_factor": 0.0006938803320129713,
+      "reset_and_chunk_exact": true
+    },
+    "one_lsb_signals_2s": {
+      "max_abs_pcm": 0,
+      "rmse_pcm": 0.0,
+      "identical_samples_percent": 100.0,
+      "samples": 32000,
+      "audio_seconds": 2.0,
+      "recovered_process_seconds": 0.13082794658839703,
+      "real_time_factor": 0.06541397329419851,
+      "reset_and_chunk_exact": true
+    },
+    "official_speech_example_10s": {
+      "max_abs_pcm": 1,
+      "rmse_pcm": 0.018200274723201296,
+      "identical_samples_percent": 99.966875,
+      "samples": 160000,
+      "audio_seconds": 10.0,
+      "recovered_process_seconds": 0.6625313442200422,
+      "real_time_factor": 0.06625313442200423,
+      "reset_and_chunk_exact": true,
+      "mic_pcm_sha256": "52546bff3a814d65588f0939382f56a303e2b8f18a99d972808f734af097bf3d",
+      "ref_pcm_sha256": "2b49aa57a82f08f1326c6f9531c5a77c9fb1e4974acc6005d26db6a4b2b8d7ee"
+    }
+  },
+  "note": "Synthetic numerical stimuli; these results do not measure speech quality.",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700K",
+  "api_invalid_arguments_rejected": true,
+  "in_place_mic_output_exact": true,
+  "in_place_ref_output_exact": true
+}

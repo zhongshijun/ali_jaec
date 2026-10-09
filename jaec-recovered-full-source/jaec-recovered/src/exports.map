@@ -1,0 +1,8 @@
+JAEC_FRONTEND_1.0 {
+    global:
+        jaec_frontend_create;
+        jaec_frontend_destroy;
+        jaec_frontend_reset;
+        jaec_frontend_process;
+        jaec_frontend_last_error;
+};

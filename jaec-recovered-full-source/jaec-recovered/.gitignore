@@ -1,0 +1,5 @@
+analysis/oracle/*.npz
+analysis/example/*.wav
+analysis/ghidra-project/
+build/
+__pycache__/

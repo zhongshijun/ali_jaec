@@ -1,0 +1,2021 @@
+[
+  {
+    "name": "_DT_INIT",
+    "address": "00101000",
+    "body_bytes": 27,
+    "signature": "undefined _DT_INIT(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__gmon_start__",
+        "address": "0011f078"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00101020",
+    "address": "00101020",
+    "body_bytes": 13,
+    "signature": "undefined FUN_00101020(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "__cxa_finalize",
+    "address": "00101190",
+    "body_bytes": 11,
+    "signature": "undefined __cxa_finalize(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__cxa_finalize",
+        "address": "0011f0c0"
+      }
+    ]
+  },
+  {
+    "name": "sincosf",
+    "address": "001011a0",
+    "body_bytes": 11,
+    "signature": "void sincosf(float __x, float * __sinx, float * __cosx)",
+    "success": true,
+    "calls": [
+      {
+        "name": "sincosf",
+        "address": "0011f000"
+      }
+    ]
+  },
+  {
+    "name": "free",
+    "address": "001011b0",
+    "body_bytes": 11,
+    "signature": "void free(void * __ptr)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "0011f008"
+      }
+    ]
+  },
+  {
+    "name": "cosf",
+    "address": "001011c0",
+    "body_bytes": 11,
+    "signature": "float cosf(float __x)",
+    "success": true,
+    "calls": [
+      {
+        "name": "cosf",
+        "address": "0011f018"
+      }
+    ]
+  },
+  {
+    "name": "expf",
+    "address": "001011d0",
+    "body_bytes": 11,
+    "signature": "float expf(float __x)",
+    "success": true,
+    "calls": [
+      {
+        "name": "expf",
+        "address": "0011f020"
+      }
+    ]
+  },
+  {
+    "name": "fread",
+    "address": "001011e0",
+    "body_bytes": 11,
+    "signature": "size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)",
+    "success": true,
+    "calls": [
+      {
+        "name": "fread",
+        "address": "0011f028"
+      }
+    ]
+  },
+  {
+    "name": "fclose",
+    "address": "001011f0",
+    "body_bytes": 11,
+    "signature": "int fclose(FILE * __stream)",
+    "success": true,
+    "calls": [
+      {
+        "name": "fclose",
+        "address": "0011f030"
+      }
+    ]
+  },
+  {
+    "name": "__stack_chk_fail",
+    "address": "00101200",
+    "body_bytes": 11,
+    "signature": "noreturn undefined __stack_chk_fail(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "0011f038"
+      }
+    ]
+  },
+  {
+    "name": "memset",
+    "address": "00101210",
+    "body_bytes": 11,
+    "signature": "void * memset(void * __s, int __c, size_t __n)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memset",
+        "address": "0011f040"
+      }
+    ]
+  },
+  {
+    "name": "logf",
+    "address": "00101220",
+    "body_bytes": 11,
+    "signature": "float logf(float __x)",
+    "success": true,
+    "calls": [
+      {
+        "name": "logf",
+        "address": "0011f048"
+      }
+    ]
+  },
+  {
+    "name": "memcmp",
+    "address": "00101230",
+    "body_bytes": 11,
+    "signature": "int memcmp(void * __s1, void * __s2, size_t __n)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memcmp",
+        "address": "0011f050"
+      }
+    ]
+  },
+  {
+    "name": "__tls_get_addr",
+    "address": "00101240",
+    "body_bytes": 11,
+    "signature": "undefined __tls_get_addr(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__tls_get_addr",
+        "address": "0011f058"
+      }
+    ]
+  },
+  {
+    "name": "calloc",
+    "address": "00101250",
+    "body_bytes": 11,
+    "signature": "void * calloc(size_t __nmemb, size_t __size)",
+    "success": true,
+    "calls": [
+      {
+        "name": "calloc",
+        "address": "0011f060"
+      }
+    ]
+  },
+  {
+    "name": "ftell",
+    "address": "00101260",
+    "body_bytes": 11,
+    "signature": "long ftell(FILE * __stream)",
+    "success": true,
+    "calls": [
+      {
+        "name": "ftell",
+        "address": "0011f068"
+      }
+    ]
+  },
+  {
+    "name": "log10f",
+    "address": "00101270",
+    "body_bytes": 11,
+    "signature": "float log10f(float __x)",
+    "success": true,
+    "calls": [
+      {
+        "name": "log10f",
+        "address": "0011f070"
+      }
+    ]
+  },
+  {
+    "name": "memcpy",
+    "address": "00101280",
+    "body_bytes": 11,
+    "signature": "void * memcpy(void * __dest, void * __src, size_t __n)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memcpy",
+        "address": "0011f080"
+      }
+    ]
+  },
+  {
+    "name": "malloc",
+    "address": "00101290",
+    "body_bytes": 11,
+    "signature": "void * malloc(size_t __size)",
+    "success": true,
+    "calls": [
+      {
+        "name": "malloc",
+        "address": "0011f088"
+      }
+    ]
+  },
+  {
+    "name": "fseek",
+    "address": "001012a0",
+    "body_bytes": 11,
+    "signature": "int fseek(FILE * __stream, long __off, int __whence)",
+    "success": true,
+    "calls": [
+      {
+        "name": "fseek",
+        "address": "0011f090"
+      }
+    ]
+  },
+  {
+    "name": "memmove",
+    "address": "001012b0",
+    "body_bytes": 11,
+    "signature": "void * memmove(void * __dest, void * __src, size_t __n)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memmove",
+        "address": "0011f098"
+      }
+    ]
+  },
+  {
+    "name": "tanhf",
+    "address": "001012c0",
+    "body_bytes": 11,
+    "signature": "float tanhf(float __x)",
+    "success": true,
+    "calls": [
+      {
+        "name": "tanhf",
+        "address": "0011f0a0"
+      }
+    ]
+  },
+  {
+    "name": "fopen",
+    "address": "001012d0",
+    "body_bytes": 11,
+    "signature": "FILE * fopen(char * __filename, char * __modes)",
+    "success": true,
+    "calls": [
+      {
+        "name": "fopen",
+        "address": "0011f0a8"
+      }
+    ]
+  },
+  {
+    "name": "jaec_frontend_destroy",
+    "address": "001012e0",
+    "body_bytes": 11,
+    "signature": "void jaec_frontend_destroy(void * state)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "posix_memalign",
+    "address": "001012f0",
+    "body_bytes": 11,
+    "signature": "int posix_memalign(void * * __memptr, size_t __alignment, size_t __size)",
+    "success": true,
+    "calls": [
+      {
+        "name": "posix_memalign",
+        "address": "0011f0b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00101300",
+    "address": "00101300",
+    "body_bytes": 32,
+    "signature": "undefined FUN_00101300(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "_INIT_0",
+    "address": "00101320",
+    "body_bytes": 4046,
+    "signature": "undefined _INIT_0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00119be0",
+        "address": "00119be0"
+      },
+      {
+        "name": "FUN_00101300",
+        "address": "00101300"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001022f0",
+    "address": "001022f0",
+    "body_bytes": 34,
+    "signature": "undefined FUN_001022f0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "_ITM_deregisterTMCloneTable",
+        "address": "0011f010"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00102320",
+    "address": "00102320",
+    "body_bytes": 51,
+    "signature": "undefined FUN_00102320(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "_ITM_registerTMCloneTable",
+        "address": "0011f0b8"
+      }
+    ]
+  },
+  {
+    "name": "_FINI_0",
+    "address": "00102360",
+    "body_bytes": 54,
+    "signature": "undefined _FINI_0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__cxa_finalize",
+        "address": "00101190"
+      },
+      {
+        "name": "FUN_001022f0",
+        "address": "001022f0"
+      }
+    ]
+  },
+  {
+    "name": "_INIT_1",
+    "address": "001023a0",
+    "body_bytes": 9,
+    "signature": "undefined _INIT_1(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00102320",
+        "address": "00102320"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001023b0",
+    "address": "001023b0",
+    "body_bytes": 1094,
+    "signature": "undefined FUN_001023b0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "jaec_frontend_last_error",
+    "address": "00102800",
+    "body_bytes": 31,
+    "signature": "char * jaec_frontend_last_error(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__tls_get_addr",
+        "address": "00101240"
+      }
+    ]
+  },
+  {
+    "name": "jaec_frontend_destroy",
+    "address": "00102820",
+    "body_bytes": 53,
+    "signature": "void jaec_frontend_destroy(void * state)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "FUN_00105170",
+        "address": "00105170"
+      },
+      {
+        "name": "FUN_00104210",
+        "address": "00104210"
+      },
+      {
+        "name": "FUN_00103260",
+        "address": "00103260"
+      }
+    ]
+  },
+  {
+    "name": "jaec_frontend_create",
+    "address": "00102860",
+    "body_bytes": 488,
+    "signature": "void * jaec_frontend_create(char * model_path)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00104db0",
+        "address": "00104db0"
+      },
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "__tls_get_addr",
+        "address": "00101240"
+      },
+      {
+        "name": "FUN_00104080",
+        "address": "00104080"
+      },
+      {
+        "name": "FUN_00104b60",
+        "address": "00104b60"
+      },
+      {
+        "name": "posix_memalign",
+        "address": "001012f0"
+      },
+      {
+        "name": "jaec_frontend_destroy",
+        "address": "001012e0"
+      },
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "memset",
+        "address": "00101210"
+      },
+      {
+        "name": "FUN_00103190",
+        "address": "00103190"
+      }
+    ]
+  },
+  {
+    "name": "jaec_frontend_reset",
+    "address": "00102a60",
+    "body_bytes": 213,
+    "signature": "void jaec_frontend_reset(void * state)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_001032b0",
+        "address": "001032b0"
+      }
+    ]
+  },
+  {
+    "name": "jaec_frontend_process",
+    "address": "00102b40",
+    "body_bytes": 1533,
+    "signature": "int jaec_frontend_process(void * state, short * mic, short * ref, int sample_count, short * output)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00103330",
+        "address": "00103330"
+      },
+      {
+        "name": "__tls_get_addr",
+        "address": "00101240"
+      },
+      {
+        "name": "FUN_00104420",
+        "address": "00104420"
+      },
+      {
+        "name": "FUN_00104ad0",
+        "address": "00104ad0"
+      },
+      {
+        "name": "FUN_00104280",
+        "address": "00104280"
+      },
+      {
+        "name": "memcmp",
+        "address": "00101230"
+      },
+      {
+        "name": "FUN_001023b0",
+        "address": "001023b0"
+      },
+      {
+        "name": "memset",
+        "address": "00101210"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00103190",
+    "address": "00103190",
+    "body_bytes": 177,
+    "signature": "undefined FUN_00103190(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00104080",
+        "address": "00104080"
+      },
+      {
+        "name": "FUN_00104210",
+        "address": "00104210"
+      },
+      {
+        "name": "free",
+        "address": "00108410"
+      },
+      {
+        "name": "FUN_00103410",
+        "address": "00103410"
+      },
+      {
+        "name": "FUN_001072d0",
+        "address": "001072d0"
+      },
+      {
+        "name": "FUN_00105280",
+        "address": "00105280"
+      },
+      {
+        "name": "memset",
+        "address": "00101210"
+      },
+      {
+        "name": "FUN_001051b0",
+        "address": "001051b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00103260",
+    "address": "00103260",
+    "body_bytes": 57,
+    "signature": "undefined FUN_00103260(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00104210",
+        "address": "00104210"
+      },
+      {
+        "name": "free",
+        "address": "00108410"
+      },
+      {
+        "name": "FUN_00105280",
+        "address": "00105280"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001032b0",
+    "address": "001032b0",
+    "body_bytes": 110,
+    "signature": "undefined FUN_001032b0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00108420",
+        "address": "00108420"
+      },
+      {
+        "name": "FUN_001052c0",
+        "address": "001052c0"
+      },
+      {
+        "name": "memset",
+        "address": "00101210"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00103330",
+    "address": "00103330",
+    "body_bytes": 215,
+    "signature": "undefined FUN_00103330(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00108540",
+        "address": "00108540"
+      },
+      {
+        "name": "FUN_001054a0",
+        "address": "001054a0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00103410",
+    "address": "00103410",
+    "body_bytes": 576,
+    "signature": "undefined FUN_00103410(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "_INIT_0",
+        "address": "00101320"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00103660",
+    "address": "00103660",
+    "body_bytes": 1180,
+    "signature": "undefined FUN_00103660(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00103b10",
+    "address": "00103b10",
+    "body_bytes": 600,
+    "signature": "undefined FUN_00103b10(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00103d80",
+    "address": "00103d80",
+    "body_bytes": 748,
+    "signature": "undefined FUN_00103d80(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00104080",
+    "address": "00104080",
+    "body_bytes": 390,
+    "signature": "undefined FUN_00104080(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "FUN_0010e6b0",
+        "address": "0010e6b0"
+      },
+      {
+        "name": "FUN_0010ddb0",
+        "address": "0010ddb0"
+      },
+      {
+        "name": "calloc",
+        "address": "00101250"
+      },
+      {
+        "name": "FUN_0010e250",
+        "address": "0010e250"
+      },
+      {
+        "name": "_INIT_0",
+        "address": "00101320"
+      },
+      {
+        "name": "malloc",
+        "address": "00101290"
+      },
+      {
+        "name": "cosf",
+        "address": "001011c0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00104210",
+    "address": "00104210",
+    "body_bytes": 91,
+    "signature": "undefined FUN_00104210(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "FUN_0010ddf0",
+        "address": "0010ddf0"
+      },
+      {
+        "name": "FUN_0010e6b0",
+        "address": "0010e6b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00104280",
+    "address": "00104280",
+    "body_bytes": 403,
+    "signature": "undefined FUN_00104280(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memcpy",
+        "address": "00101280"
+      },
+      {
+        "name": "FUN_0010f2a0",
+        "address": "0010f2a0"
+      },
+      {
+        "name": "FUN_00103b10",
+        "address": "00103b10"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00104420",
+    "address": "00104420",
+    "body_bytes": 962,
+    "signature": "undefined FUN_00104420(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memcpy",
+        "address": "00101280"
+      },
+      {
+        "name": "FUN_00103660",
+        "address": "00103660"
+      },
+      {
+        "name": "FUN_0010f2a0",
+        "address": "0010f2a0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001047f0",
+    "address": "001047f0",
+    "body_bytes": 713,
+    "signature": "undefined FUN_001047f0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00103d80",
+        "address": "00103d80"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00104ad0",
+    "address": "00104ad0",
+    "body_bytes": 133,
+    "signature": "undefined FUN_00104ad0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memcpy",
+        "address": "00101280"
+      },
+      {
+        "name": "FUN_001047f0",
+        "address": "001047f0"
+      },
+      {
+        "name": "FUN_0010f2a0",
+        "address": "0010f2a0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00104b60",
+    "address": "00104b60",
+    "body_bytes": 556,
+    "signature": "undefined FUN_00104b60(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memset",
+        "address": "00101210"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00104db0",
+    "address": "00104db0",
+    "body_bytes": 941,
+    "signature": "undefined FUN_00104db0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "ftell",
+        "address": "00101260"
+      },
+      {
+        "name": "posix_memalign",
+        "address": "001012f0"
+      },
+      {
+        "name": "FUN_00118270",
+        "address": "00118270"
+      },
+      {
+        "name": "calloc",
+        "address": "00101250"
+      },
+      {
+        "name": "fseek",
+        "address": "001012a0"
+      },
+      {
+        "name": "memmove",
+        "address": "001012b0"
+      },
+      {
+        "name": "fread",
+        "address": "001011e0"
+      },
+      {
+        "name": "FUN_00119b10",
+        "address": "00119b10"
+      },
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "__tls_get_addr",
+        "address": "00101240"
+      },
+      {
+        "name": "fopen",
+        "address": "001012d0"
+      },
+      {
+        "name": "fclose",
+        "address": "001011f0"
+      },
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00105170",
+    "address": "00105170",
+    "body_bytes": 51,
+    "signature": "undefined FUN_00105170(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "FUN_00118270",
+        "address": "00118270"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001051b0",
+    "address": "001051b0",
+    "body_bytes": 198,
+    "signature": "undefined FUN_001051b0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "FUN_00103410",
+        "address": "00103410"
+      },
+      {
+        "name": "calloc",
+        "address": "00101250"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00105280",
+    "address": "00105280",
+    "body_bytes": 49,
+    "signature": "undefined FUN_00105280(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001052c0",
+    "address": "001052c0",
+    "body_bytes": 468,
+    "signature": "undefined FUN_001052c0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memset",
+        "address": "00101210"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001054a0",
+    "address": "001054a0",
+    "body_bytes": 1647,
+    "signature": "undefined FUN_001054a0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "expf",
+        "address": "001011d0"
+      },
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00105b10",
+    "address": "00105b10",
+    "body_bytes": 276,
+    "signature": "undefined FUN_00105b10(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00105c30",
+    "address": "00105c30",
+    "body_bytes": 3195,
+    "signature": "undefined FUN_00105c30(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "log10f",
+        "address": "00101270"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00106900",
+    "address": "00106900",
+    "body_bytes": 1857,
+    "signature": "undefined FUN_00106900(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "tanhf",
+        "address": "001012c0"
+      },
+      {
+        "name": "expf",
+        "address": "001011d0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00107050",
+    "address": "00107050",
+    "body_bytes": 628,
+    "signature": "undefined FUN_00107050(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_001072d0",
+    "address": "001072d0",
+    "body_bytes": 4402,
+    "signature": "undefined FUN_001072d0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "posix_memalign",
+        "address": "001012f0"
+      },
+      {
+        "name": "memset",
+        "address": "00101210"
+      },
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00103410",
+        "address": "00103410"
+      },
+      {
+        "name": "FUN_00107050",
+        "address": "00107050"
+      }
+    ]
+  },
+  {
+    "name": "free",
+    "address": "00108410",
+    "body_bytes": 9,
+    "signature": "void free(void * __ptr)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00108420",
+    "address": "00108420",
+    "body_bytes": 286,
+    "signature": "undefined FUN_00108420(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00108540",
+    "address": "00108540",
+    "body_bytes": 982,
+    "signature": "undefined FUN_00108540(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00108920",
+    "address": "00108920",
+    "body_bytes": 465,
+    "signature": "undefined FUN_00108920(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00108b00",
+    "address": "00108b00",
+    "body_bytes": 1605,
+    "signature": "undefined FUN_00108b00(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "expf",
+        "address": "001011d0"
+      },
+      {
+        "name": "tanhf",
+        "address": "001012c0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00109170",
+    "address": "00109170",
+    "body_bytes": 581,
+    "signature": "undefined FUN_00109170(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_001093c0",
+    "address": "001093c0",
+    "body_bytes": 1122,
+    "signature": "undefined FUN_001093c0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "logf",
+        "address": "00101220"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00109830",
+    "address": "00109830",
+    "body_bytes": 998,
+    "signature": "undefined FUN_00109830(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00109c20",
+    "address": "00109c20",
+    "body_bytes": 3537,
+    "signature": "undefined FUN_00109c20(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "expf",
+        "address": "001011d0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010aa10",
+    "address": "0010aa10",
+    "body_bytes": 337,
+    "signature": "undefined FUN_0010aa10(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010ab70",
+    "address": "0010ab70",
+    "body_bytes": 464,
+    "signature": "undefined FUN_0010ab70(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010ad40",
+    "address": "0010ad40",
+    "body_bytes": 909,
+    "signature": "undefined FUN_0010ad40(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010b0d0",
+    "address": "0010b0d0",
+    "body_bytes": 1102,
+    "signature": "undefined FUN_0010b0d0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010b520",
+    "address": "0010b520",
+    "body_bytes": 544,
+    "signature": "undefined FUN_0010b520(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010b740",
+    "address": "0010b740",
+    "body_bytes": 589,
+    "signature": "undefined FUN_0010b740(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010b990",
+    "address": "0010b990",
+    "body_bytes": 1238,
+    "signature": "undefined FUN_0010b990(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010be70",
+    "address": "0010be70",
+    "body_bytes": 1135,
+    "signature": "undefined FUN_0010be70(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010c2e0",
+    "address": "0010c2e0",
+    "body_bytes": 2209,
+    "signature": "undefined FUN_0010c2e0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_0010b520",
+        "address": "0010b520"
+      },
+      {
+        "name": "FUN_0010b990",
+        "address": "0010b990"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010cb90",
+    "address": "0010cb90",
+    "body_bytes": 2434,
+    "signature": "undefined FUN_0010cb90(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_0010b740",
+        "address": "0010b740"
+      },
+      {
+        "name": "FUN_0010be70",
+        "address": "0010be70"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010d530",
+    "address": "0010d530",
+    "body_bytes": 274,
+    "signature": "undefined FUN_0010d530(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memmove",
+        "address": "001012b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010d650",
+    "address": "0010d650",
+    "body_bytes": 932,
+    "signature": "undefined FUN_0010d650(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010da00",
+    "address": "0010da00",
+    "body_bytes": 930,
+    "signature": "undefined FUN_0010da00(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010ddb0",
+    "address": "0010ddb0",
+    "body_bytes": 50,
+    "signature": "undefined FUN_0010ddb0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "malloc",
+        "address": "00101290"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010ddf0",
+    "address": "0010ddf0",
+    "body_bytes": 19,
+    "signature": "undefined FUN_0010ddf0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010de10",
+    "address": "0010de10",
+    "body_bytes": 514,
+    "signature": "undefined FUN_0010de10(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "sincosf",
+        "address": "001011a0"
+      },
+      {
+        "name": "FUN_0010d530",
+        "address": "0010d530"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010e020",
+    "address": "0010e020",
+    "body_bytes": 528,
+    "signature": "undefined FUN_0010e020(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_0010aa10",
+        "address": "0010aa10"
+      },
+      {
+        "name": "FUN_0010b0d0",
+        "address": "0010b0d0"
+      },
+      {
+        "name": "FUN_0010ad40",
+        "address": "0010ad40"
+      },
+      {
+        "name": "FUN_0010ab70",
+        "address": "0010ab70"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010e250",
+    "address": "0010e250",
+    "body_bytes": 1105,
+    "signature": "undefined FUN_0010e250(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      },
+      {
+        "name": "sincosf",
+        "address": "001011a0"
+      },
+      {
+        "name": "FUN_0010de10",
+        "address": "0010de10"
+      },
+      {
+        "name": "malloc",
+        "address": "00101290"
+      },
+      {
+        "name": "FUN_0010d530",
+        "address": "0010d530"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010e6b0",
+    "address": "0010e6b0",
+    "body_bytes": 35,
+    "signature": "undefined FUN_0010e6b0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "free",
+        "address": "001011b0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010e6e0",
+    "address": "0010e6e0",
+    "body_bytes": 371,
+    "signature": "undefined FUN_0010e6e0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010e860",
+    "address": "0010e860",
+    "body_bytes": 387,
+    "signature": "undefined FUN_0010e860(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010e9f0",
+    "address": "0010e9f0",
+    "body_bytes": 2171,
+    "signature": "undefined FUN_0010e9f0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_0010cb90",
+        "address": "0010cb90"
+      },
+      {
+        "name": "FUN_0010da00",
+        "address": "0010da00"
+      },
+      {
+        "name": "FUN_0010c2e0",
+        "address": "0010c2e0"
+      },
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_0010d650",
+        "address": "0010d650"
+      },
+      {
+        "name": "FUN_0010e860",
+        "address": "0010e860"
+      },
+      {
+        "name": "FUN_0010e020",
+        "address": "0010e020"
+      },
+      {
+        "name": "FUN_0010e6e0",
+        "address": "0010e6e0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010f2a0",
+    "address": "0010f2a0",
+    "body_bytes": 15,
+    "signature": "undefined FUN_0010f2a0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_0010e9f0",
+        "address": "0010e9f0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_0010f2b0",
+    "address": "0010f2b0",
+    "body_bytes": 1628,
+    "signature": "undefined FUN_0010f2b0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_0010f910",
+    "address": "0010f910",
+    "body_bytes": 3215,
+    "signature": "undefined FUN_0010f910(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_001105a0",
+    "address": "001105a0",
+    "body_bytes": 5805,
+    "signature": "undefined FUN_001105a0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "log10f",
+        "address": "00101270"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00111c90",
+    "address": "00111c90",
+    "body_bytes": 2701,
+    "signature": "undefined FUN_00111c90(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "expf",
+        "address": "001011d0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00112730",
+    "address": "00112730",
+    "body_bytes": 1155,
+    "signature": "undefined FUN_00112730(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00112bc0",
+    "address": "00112bc0",
+    "body_bytes": 377,
+    "signature": "undefined FUN_00112bc0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00112d40",
+    "address": "00112d40",
+    "body_bytes": 1701,
+    "signature": "undefined FUN_00112d40(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_001133f0",
+    "address": "001133f0",
+    "body_bytes": 2332,
+    "signature": "undefined FUN_001133f0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "logf",
+        "address": "00101220"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00113d20",
+    "address": "00113d20",
+    "body_bytes": 1420,
+    "signature": "undefined FUN_00113d20(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_001142b0",
+    "address": "001142b0",
+    "body_bytes": 3880,
+    "signature": "undefined FUN_001142b0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00112730",
+        "address": "00112730"
+      },
+      {
+        "name": "expf",
+        "address": "001011d0"
+      },
+      {
+        "name": "tanhf",
+        "address": "001012c0"
+      },
+      {
+        "name": "FUN_00112bc0",
+        "address": "00112bc0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001151e0",
+    "address": "001151e0",
+    "body_bytes": 347,
+    "signature": "undefined FUN_001151e0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00115340",
+    "address": "00115340",
+    "body_bytes": 1049,
+    "signature": "undefined FUN_00115340(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00115760",
+    "address": "00115760",
+    "body_bytes": 1891,
+    "signature": "undefined FUN_00115760(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00115ed0",
+    "address": "00115ed0",
+    "body_bytes": 2734,
+    "signature": "undefined FUN_00115ed0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "expf",
+        "address": "001011d0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00116980",
+    "address": "00116980",
+    "body_bytes": 1352,
+    "signature": "undefined FUN_00116980(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "memset",
+        "address": "00101210"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00116ee0",
+    "address": "00116ee0",
+    "body_bytes": 783,
+    "signature": "undefined FUN_00116ee0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00117200",
+    "address": "00117200",
+    "body_bytes": 515,
+    "signature": "undefined FUN_00117200(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00117410",
+    "address": "00117410",
+    "body_bytes": 455,
+    "signature": "undefined FUN_00117410(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_001175e0",
+    "address": "001175e0",
+    "body_bytes": 1698,
+    "signature": "undefined FUN_001175e0(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00117200",
+        "address": "00117200"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00117c90",
+    "address": "00117c90",
+    "body_bytes": 1491,
+    "signature": "undefined FUN_00117c90(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00117410",
+        "address": "00117410"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00118270",
+    "address": "00118270",
+    "body_bytes": 29,
+    "signature": "undefined FUN_00118270(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00118290",
+    "address": "00118290",
+    "body_bytes": 720,
+    "signature": "undefined FUN_00118290(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00117200",
+        "address": "00117200"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00118560",
+    "address": "00118560",
+    "body_bytes": 4198,
+    "signature": "undefined FUN_00118560(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00117200",
+        "address": "00117200"
+      }
+    ]
+  },
+  {
+    "name": "FUN_001195d0",
+    "address": "001195d0",
+    "body_bytes": 163,
+    "signature": "undefined FUN_001195d0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "FUN_00119680",
+    "address": "00119680",
+    "body_bytes": 251,
+    "signature": "undefined FUN_00119680(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "FUN_00117410",
+        "address": "00117410"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00119780",
+    "address": "00119780",
+    "body_bytes": 493,
+    "signature": "undefined FUN_00119780(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00119680",
+        "address": "00119680"
+      },
+      {
+        "name": "FUN_001195d0",
+        "address": "001195d0"
+      },
+      {
+        "name": "FUN_00117c90",
+        "address": "00117c90"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00119970",
+    "address": "00119970",
+    "body_bytes": 408,
+    "signature": "undefined FUN_00119970(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00119780",
+        "address": "00119780"
+      },
+      {
+        "name": "FUN_00118560",
+        "address": "00118560"
+      },
+      {
+        "name": "FUN_001175e0",
+        "address": "001175e0"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00119b10",
+    "address": "00119b10",
+    "body_bytes": 200,
+    "signature": "undefined FUN_00119b10(void)",
+    "success": true,
+    "calls": [
+      {
+        "name": "__stack_chk_fail",
+        "address": "00101200"
+      },
+      {
+        "name": "FUN_00118290",
+        "address": "00118290"
+      },
+      {
+        "name": "FUN_00119970",
+        "address": "00119970"
+      }
+    ]
+  },
+  {
+    "name": "FUN_00119be0",
+    "address": "00119be0",
+    "body_bytes": 32,
+    "signature": "undefined FUN_00119be0(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "_DT_FINI",
+    "address": "00119c00",
+    "body_bytes": 13,
+    "signature": "undefined _DT_FINI(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "sincosf",
+    "address": "0011f000",
+    "body_bytes": 1,
+    "signature": "void sincosf(float __x, float * __sinx, float * __cosx)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "free",
+    "address": "0011f008",
+    "body_bytes": 1,
+    "signature": "void free(void * __ptr)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "_ITM_deregisterTMCloneTable",
+    "address": "0011f010",
+    "body_bytes": 1,
+    "signature": "undefined _ITM_deregisterTMCloneTable(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "cosf",
+    "address": "0011f018",
+    "body_bytes": 1,
+    "signature": "float cosf(float __x)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "expf",
+    "address": "0011f020",
+    "body_bytes": 1,
+    "signature": "float expf(float __x)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "fread",
+    "address": "0011f028",
+    "body_bytes": 1,
+    "signature": "size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "fclose",
+    "address": "0011f030",
+    "body_bytes": 1,
+    "signature": "int fclose(FILE * __stream)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "__stack_chk_fail",
+    "address": "0011f038",
+    "body_bytes": 1,
+    "signature": "noreturn undefined __stack_chk_fail(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "memset",
+    "address": "0011f040",
+    "body_bytes": 1,
+    "signature": "void * memset(void * __s, int __c, size_t __n)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "logf",
+    "address": "0011f048",
+    "body_bytes": 1,
+    "signature": "float logf(float __x)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "memcmp",
+    "address": "0011f050",
+    "body_bytes": 1,
+    "signature": "int memcmp(void * __s1, void * __s2, size_t __n)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "__tls_get_addr",
+    "address": "0011f058",
+    "body_bytes": 1,
+    "signature": "undefined __tls_get_addr(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "calloc",
+    "address": "0011f060",
+    "body_bytes": 1,
+    "signature": "void * calloc(size_t __nmemb, size_t __size)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "ftell",
+    "address": "0011f068",
+    "body_bytes": 1,
+    "signature": "long ftell(FILE * __stream)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "log10f",
+    "address": "0011f070",
+    "body_bytes": 1,
+    "signature": "float log10f(float __x)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "__gmon_start__",
+    "address": "0011f078",
+    "body_bytes": 1,
+    "signature": "undefined __gmon_start__(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "memcpy",
+    "address": "0011f080",
+    "body_bytes": 1,
+    "signature": "void * memcpy(void * __dest, void * __src, size_t __n)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "malloc",
+    "address": "0011f088",
+    "body_bytes": 1,
+    "signature": "void * malloc(size_t __size)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "fseek",
+    "address": "0011f090",
+    "body_bytes": 1,
+    "signature": "int fseek(FILE * __stream, long __off, int __whence)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "memmove",
+    "address": "0011f098",
+    "body_bytes": 1,
+    "signature": "void * memmove(void * __dest, void * __src, size_t __n)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "tanhf",
+    "address": "0011f0a0",
+    "body_bytes": 1,
+    "signature": "float tanhf(float __x)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "fopen",
+    "address": "0011f0a8",
+    "body_bytes": 1,
+    "signature": "FILE * fopen(char * __filename, char * __modes)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "posix_memalign",
+    "address": "0011f0b0",
+    "body_bytes": 1,
+    "signature": "int posix_memalign(void * * __memptr, size_t __alignment, size_t __size)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "_ITM_registerTMCloneTable",
+    "address": "0011f0b8",
+    "body_bytes": 1,
+    "signature": "undefined _ITM_registerTMCloneTable(void)",
+    "success": true,
+    "calls": []
+  },
+  {
+    "name": "__cxa_finalize",
+    "address": "0011f0c0",
+    "body_bytes": 1,
+    "signature": "undefined __cxa_finalize(void)",
+    "success": true,
+    "calls": []
+  }
+]

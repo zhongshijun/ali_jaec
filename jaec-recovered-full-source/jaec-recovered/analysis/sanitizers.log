@@ -1,0 +1,14 @@
+cc -O1 -g -std=c11 -fPIC -Wall -Wextra -ffp-contract=off -DJAEC_X86_APPROX=1 \
+  -fsanitize=address,undefined -fno-omit-frame-pointer \
+  tests/sanitize_streaming.c src/frontend.c src/tde.c src/linear_aec.c src/activation_compat.c src/model_loader.c src/vendor/monocypher/monocypher.c src/vendor/pffft/pffft.c src/vendor/pffft/pffft_common.c -o build/sanitize_streaming -lm
+In file included from src/vendor/pffft/simd/pf_float.h:62,
+                 from src/vendor/pffft/pffft.c:98:
+src/vendor/pffft/simd/pf_sse1_float.h:42:9: note: #pragma message: src/vendor/pffft/simd/pf_sse1_float.h: SSE1 float macros are defined
+   42 | #pragma message( __FILE__ ": SSE1 float macros are defined" )
+      |         ^~~~~~~
+ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1 \
+  build/sanitize_streaming original/tde_lp.bin
+==28==LeakSanitizer has encountered a fatal error.
+==28==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==28==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+make: *** [Makefile:42: sanitize] Error 1
